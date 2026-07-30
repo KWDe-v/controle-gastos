@@ -1,0 +1,48 @@
+.form-transacao {
+  background-color: var(--cor-card);
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-transacao input,
+.form-transacao select {
+  padding: 0.7rem;
+  border: 2px solid var(--cor-borda);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-transacao input:focus,
+.form-transacao select:focus {
+  border-color: var(--cor-primaria);
+}
+
+.form-transacao__linha {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.form-transacao__linha input {
+  flex: 1;
+}
+
+.form-transacao button {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.form-transacao button:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,53 @@
+.resumo {
+  background-color: var(--cor-card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.resumo__saldo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.resumo__saldo span {
+  color: var(--cor-suave);
+  font-size: 0.9rem;
+}
+
+.resumo__saldo strong {
+  font-size: 2rem;
+}
+
+.resumo__linha {
+  display: flex;
+  gap: 1rem;
+}
+
+.resumo__box {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  background-color: var(--cor-fundo);
+}
+
+.resumo__box span {
+  font-size: 0.8rem;
+  color: var(--cor-suave);
+}
+
+.verde {
+  color: var(--cor-entrada);
+}
+
+.vermelho {
+  color: var(--cor-saida);
+}

@@ -1,0 +1,64 @@
+.transacoes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.transacoes__vazia {
+  text-align: center;
+  color: var(--cor-suave);
+  background-color: var(--cor-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.transacao {
+  background-color: var(--cor-card);
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-left: 5px solid;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.transacao.entrada {
+  border-left-color: var(--cor-entrada);
+}
+
+.transacao.saida {
+  border-left-color: var(--cor-saida);
+}
+
+.transacao__descricao {
+  flex: 1;
+}
+
+.transacao__valor {
+  font-weight: 700;
+}
+
+.entrada .transacao__valor {
+  color: var(--cor-entrada);
+}
+
+.saida .transacao__valor {
+  color: var(--cor-saida);
+}
+
+.transacao__remover {
+  background: transparent;
+  border: none;
+  color: var(--cor-suave);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+}
+
+.transacao__remover:hover {
+  background-color: #f1f5f9;
+  color: var(--cor-saida);
+}
